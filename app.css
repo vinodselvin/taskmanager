@@ -1,0 +1,120 @@
+/*
+ * @Author: Vinod Selvin
+ */
+html, body, *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Buttons and Input elements css*/
+.primary-btn,
+.secondary-btn,
+.input-number {
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-number {
+    cursor: unset;
+    width: 50px;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    opacity: 0.9;
+}
+
+.primary-btn {
+    background-color: rgb(142, 112, 176);
+    color: white;
+    border: 1px solid rgb(142, 112, 176);
+}
+
+.secondary-btn,
+.input-number {
+    background-color: #ffffff;
+    color: rgb(142, 112, 176);
+    border: 1px solid rgb(142, 112, 176);
+}
+/*End*/
+
+/*Progress bar*/
+.job{
+    display: flex;
+    margin: 15px 0px;
+}
+.progress-container, .delete-icon {
+    background-color:#ffffff;
+    border-radius: 4px;
+    border: 2px solid  rgb(142, 112, 176);
+    width: 100%;
+}
+.progress-container{
+    margin-right: 5px;
+}
+.progress-container > .progress {
+    width: 0%;
+    background-color: rgb(142, 112, 176);
+    color: #000000;
+    transition: width 0.3s;
+}
+.progress-container > .progress > .label{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 100%;
+    min-width: max-content;
+}
+/*End*/
+
+/*Delete icons*/
+.delete-icon{
+    padding: 3px;
+    font-weight: bold;
+    color: rgb(142, 112, 176);
+}
+.delete-icon:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+/*End*/
+
+/*Controls*/
+.server-control, .task-control, #job-list{
+    margin: 15px;
+}
+
+.progress-container-list{
+    width: auto;
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+/*End*/
+
+/*Stats table*/
+#stats{
+    margin: 15px;
+    color: rgb(142, 112, 176);
+}
+#stats table{
+    color: rgb(142, 112, 176);
+    font-weight: bold;
+    border: 1px solid rgb(142, 112, 176);
+}
+#stats table td{
+    text-align: right;
+}
+#stats table th{
+    text-align: left;
+}
+#stats table td, #stats table th{
+    padding: 5px;
+}
+/*End*/
